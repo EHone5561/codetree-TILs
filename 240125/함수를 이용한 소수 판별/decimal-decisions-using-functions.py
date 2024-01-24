@@ -2,6 +2,8 @@ def calculate(a, b):
     sigma = 0
     for i in range(a, b+1):
         prime = True
+        if(i == 1):
+            break
         for j in range(2, i):
             if (i % j == 0):
                 prime = False
